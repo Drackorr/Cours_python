@@ -1,3 +1,4 @@
+#Déterminer si un mot est un palindrome
 mon_mot = input("votre mot : ")
 mon_mot_inverse = "" #mot inverser
 
