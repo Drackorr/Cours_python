@@ -1,6 +1,7 @@
 #Supprimer toutes les voyelles d'un chaîne de caractères
 
 def vid_var(phrase):
+    """Enlever les voyelles d'une chaine de caractères"""
     phrase = (phrase.replace("a", ""))
     phrase = (phrase.replace("e", ""))
     phrase = (phrase.replace("y", ""))
