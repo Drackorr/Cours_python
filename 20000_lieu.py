@@ -6,10 +6,12 @@ with open('20000.txt','r',encoding='utf8') as fichier:
 
 def nettoyer_texte(texte):
     texte = texte.lower()
-    car_spec = ",.!?()\";:"
+    car_spec = ",.!?()_\";:"
     for lettre in texte:
         if lettre in car_spec:
             texte = texte.replace(lettre,'')
+    for car in ['\n',"'",'-','--']:
+        texte = texte.replace(car,' ')
     texte = texte.replace('\n',' ')
     texte = texte.replace("'", ' ')
     return texte
